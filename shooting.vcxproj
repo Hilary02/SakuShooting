@@ -130,12 +130,16 @@
     <ClCompile Include="GameMain.cpp" />
     <ClCompile Include="KeyInput.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Mover.cpp" />
+    <ClCompile Include="PlayerShip.cpp" />
     <ClCompile Include="WindowSystem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameMain.h" />
     <ClInclude Include="KeyInput.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="Mover.h" />
+    <ClInclude Include="PlayerShip.h" />
     <ClInclude Include="util\Singleton.h" />
     <ClInclude Include="WindowSystem.h" />
   </ItemGroup>

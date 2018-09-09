@@ -1,5 +1,7 @@
 #pragma once
 #include "util/Singleton.h"
+#include "PlayerShip.h"
+
 
 class GameMain {
 public:
@@ -11,5 +13,7 @@ private:
 	int time = 0;
 	enum SCENE { LOGO, TITLE, SELECT, PLAY, OPTION };
 	SCENE scene;	//ƒV[ƒ“‚²‚Æ‚É‹æ•Ê‚µ‚½—ñ‹“Œ^
+
+	PlayerShip* player;
 
 };

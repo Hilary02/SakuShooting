@@ -17,3 +17,4 @@ protected:
 	virtual ~KeyInput();
 };
 
+#define KEYINPUT KeyInput::GetInstance()
