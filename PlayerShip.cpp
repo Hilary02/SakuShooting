@@ -3,11 +3,12 @@
 PlayerShip::PlayerShip() {
 	//画像マネージャに移動
 	shipImg = LoadGraph("resource/graph/player_ship.png");
+	SetHalfGraphSize(&w, &h, shipImg);
 	x = 140;
 	y = 200;
 	speed = 3.0f;
-	fieldLT = new Vector2D{ 0,0 };
-	fieldRB = new Vector2D{ 500,600 };
+	fieldLT = new Vector2D{ 20,20 };
+	fieldRB = new Vector2D{ 480,580 };
 }
 
 PlayerShip::~PlayerShip() {
@@ -36,5 +37,6 @@ bool PlayerShip::Update() {
 }
 
 void PlayerShip::Draw() {
-	DrawGraph(x, y, shipImg, true);
+	DrawCenterGraph(x, y, w, h, shipImg, true);
+	printfDx("%f,%f\n", x, y);
 }

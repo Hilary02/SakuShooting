@@ -21,7 +21,7 @@ void GameMain::MainLoop() {
 
 		//SceneM.update();
 		//SceneM.Draw();
-		printfDx("%d\n", time);
+		//printfDx("%d\n", time);
 
 		//デバック表示
 		//FpsFunction(window.WINDOW_WIDTH - 80, 0);
