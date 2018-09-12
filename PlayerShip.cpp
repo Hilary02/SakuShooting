@@ -8,7 +8,7 @@ PlayerShip::PlayerShip() {
 	y = 200;
 	speed = 3.0f;
 	fieldLT = new Vector2D{ 20,20 };
-	fieldRB = new Vector2D{ 480,580 };
+	fieldRB = new Vector2D{ 530,580 };
 }
 
 PlayerShip::~PlayerShip() {

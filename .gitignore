@@ -261,6 +261,4 @@ __pycache__/
 *.pyc
 
 
-地球侵略/Log.txt
-地球侵略/save.dat
-地球侵略/除外されたもの/*
+resource/making/

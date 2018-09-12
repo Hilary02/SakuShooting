@@ -3,9 +3,11 @@
 #include "KeyInput.h"
 
 GameMain::GameMain() {
-	player = new PlayerShip();
+	stage = new Stage();
 }
-GameMain::~GameMain() {}
+GameMain::~GameMain() {
+	delete stage;
+}
 
 //ゲームのメインループ
 void GameMain::MainLoop() {
@@ -16,8 +18,8 @@ void GameMain::MainLoop() {
 		time++;					//全体時間の更新
 
 		//SoundM.SoundPlayer();
-		player->Update();
-		player->Draw();
+		stage->Update();
+		stage->Draw();
 
 		//SceneM.update();
 		//SceneM.Draw();
